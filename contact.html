@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Contact Ambika Fabrication — Get a free quote for tensile structures, industrial sheds, or architectural metalwork. Call, email, or WhatsApp us today." />
-  <title>Contact Us | Ambika Fabrication</title>
+  <title>Contact Us | Ambika Fabrication Works</title>
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .contact-section {
-      padding: 90px 0;
+      padding: clamp(48px, 7vw, 90px) 0;
       background: var(--bg);
     }
 
     .map-section {
-      padding: 0 0 90px;
+      padding: 0 0 clamp(48px, 7vw, 90px);
       background: var(--bg);
     }
 
@@ -25,97 +25,134 @@
 
     .map-header {
       text-align: center;
-      padding: 60px 0 40px;
+      padding: clamp(36px, 5vw, 60px) 0 clamp(24px, 3.5vw, 40px);
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOPBAR -->
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
-          </svg><a href="tel:+919356603567">+91 93566 03567</a></div>
-        <div class="topbar-divider"></div>
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg><a href="mailto:moteprathmesh22@gmail.com">moteprathmesh22@gmail.com</a></div>
-        <div class="topbar-divider"></div>
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg><span>Mon–Sat: 9:00 AM – 6:30 PM</span></div>
-      </div>
-      <div class="topbar-right">
-        <div class="topbar-social" style="display:flex;gap:8px">
-          <a href="#"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-            </svg></a>
-          <a href="#"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-            </svg></a>
-          <a href="https://wa.me/919356603567"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+  <!-- ══════════════ STICKY HEADER (TOPBAR + NAVBAR) ══════════════ -->
+  <header class="site-header" id="site-header">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-left topbar-slider" id="topbar-slider">
+          <div class="topbar-item topbar-phone active">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg></a>
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
+            </svg>
+            <a href="tel:+919356603567">+91 93566 03567</a>
+          </div>
+          <div class="topbar-divider topbar-div-email"></div>
+          <div class="topbar-item topbar-email">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:moteprathmesh22@gmail.com">moteprathmesh22@gmail.com</a>
+          </div>
+          <div class="topbar-divider topbar-div-hours"></div>
+          <div class="topbar-item topbar-hours">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <span>Mon–Sat: 9:00 AM – 6:30 PM</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-social">
+            <a href="#" aria-label="Facebook" class="social-fb">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-ig">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-li">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://wa.me/919356603567" aria-label="WhatsApp" class="social-wa">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="Ambika Fabrication Logo" />
-        <div class="nav-logo-text">
-          <span class="brand-name">Ambika</span>
-          <span class="brand-sub">Fabrication</span>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="nav-item-dropdown">
-          <a href="services.html" class="dropdown-toggle">
-            Services
-            <svg class="dropdown-icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html#tensile">Tensile Structures</a></li>
-            <li><a href="services.html#industrial">Industrial Fabrication</a></li>
-            <li><a href="services.html#architectural">Architectural Metalwork</a></li>
-            <li><a href="services.html#turnkey">Turnkey Erection Services</a></li>
-          </ul>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-      </ul>
-      <a href="contact.html" class="btn btn-gold nav-cta">Get a Free Quote</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Ambika Fabrication Logo" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Ambika</span>
+            <span class="brand-sub">Fabrication</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="nav-item-dropdown">
+            <a href="services.html" class="dropdown-toggle">
+              Services
+              <svg class="dropdown-icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#poultry-farm">Poultry Farm</a></li>
+              <li><a href="services.html#cow-goat-farm">Cow & Goat Farm</a></li>
+              <li><a href="services.html#onion-storage-shed">Onion Storage Shed</a></li>
+              <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+              <li><a href="services.html#tensile-structure">Tensile Structure</a></li>
+              <li><a href="services.html#project-estimation">Project Estimation</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold nav-cta">Get a Free Quote</a>
+        <button class="hamburger" aria-label="Toggle menu"
+          id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
   <div class="mobile-nav" id="mobile-nav">
     <a href="index.html">🏠 Home</a>
     <a href="about.html">🏭 About Us</a>
-    <a href="services.html">⚙️ Services</a>
-    <div class="mobile-sub-menu">
-      <a href="services.html#tensile">└ Tensile Structures</a>
-      <a href="services.html#industrial">└ Industrial Fabrication</a>
-      <a href="services.html#architectural">└ Architectural Metalwork</a>
-      <a href="services.html#turnkey">└ Turnkey Erection</a>
+    <div class="mobile-nav-item-dropdown">
+      <div class="mobile-dropdown-header">
+        <a href="services.html">⚙️ Services</a>
+        <button class="mobile-dropdown-btn" aria-label="Toggle Services sub-menu" type="button">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-sub-menu">
+        <a href="services.html#poultry-farm">Poultry Farm</a>
+        <a href="services.html#cow-goat-farm">Cow & Goat Farm</a>
+        <a href="services.html#onion-storage-shed">Onion Storage Shed</a>
+        <a href="services.html#industrial-shed">Industrial Shed</a>
+        <a href="services.html#tensile-structure">Tensile Structure</a>
+        <a href="services.html#project-estimation">Project Estimation</a>
+      </div>
     </div>
     <a href="gallery.html">🖼️ Gallery</a>
     <a href="contact.html" class="active">📞 Contact Us</a>
@@ -254,11 +291,12 @@
                 <label for="service">Service Required *</label>
                 <select id="service" name="service" required>
                   <option value="" disabled selected>Select a Service</option>
-                  <option value="tensile">Tensile Structures</option>
-                  <option value="industrial">Industrial Sheds / Factory Buildings</option>
-                  <option value="architectural">Architectural Metalwork</option>
-                  <option value="heavy">Heavy Fabrication</option>
-                  <option value="turnkey">Turnkey Erection Services</option>
+                  <option value="poultry-farm">Poultry Farm</option>
+                  <option value="cow-goat-farm">Cow & Goat Farm</option>
+                  <option value="onion-storage-shed">Onion Storage Shed</option>
+                  <option value="industrial-shed">Industrial Shed</option>
+                  <option value="tensile-structure">Tensile Structure</option>
+                  <option value="project-estimation">Project Estimation</option>
                   <option value="other">Other / General Inquiry</option>
                 </select>
               </div>
@@ -311,8 +349,14 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <div class="footer-logo"><img src="images/logo.png" alt="Ambika Fabrication" /></div>
-          <p>Engineering strength and crafting excellence since 2005. We specialize in tensile structures, industrial
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Ambika Fabrication" />
+            <div class="footer-logo-text">
+              <span class="brand-name">Ambika</span>
+              <span class="brand-sub">Fabrication</span>
+            </div>
+          </div>
+          <p>Engineering strength and crafting excellence since 2000. We specialize in tensile structures, industrial
             sheds, and precision metalwork across India.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
@@ -347,11 +391,12 @@
         <div class="footer-col">
           <h4>Our Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html">Tensile Structures</a></li>
-            <li><a href="services.html">Industrial Sheds</a></li>
-            <li><a href="services.html">Architectural Metalwork</a></li>
-            <li><a href="services.html">Turnkey Erection</a></li>
-            <li><a href="services.html">Heavy Fabrication</a></li>
+            <li><a href="services.html#poultry-farm">Poultry Farm</a></li>
+            <li><a href="services.html#cow-goat-farm">Cow & Goat Farm</a></li>
+            <li><a href="services.html#onion-storage-shed">Onion Storage Shed</a></li>
+            <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+            <li><a href="services.html#tensile-structure">Tensile Structure</a></li>
+            <li><a href="services.html#project-estimation">Project Estimation</a></li>
           </ul>
         </div>
         <div class="footer-col">

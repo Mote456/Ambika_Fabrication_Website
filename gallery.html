@@ -6,92 +6,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Ambika Fabrication Gallery — View our portfolio of tensile structures, industrial sheds, and architectural metalwork projects across India." />
-  <title>Gallery | Ambika Fabrication</title>
+  <title>Gallery | Ambika Fabrication Works</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- TOPBAR -->
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
-          </svg><a href="tel:+919356603567">+91 93566 03567</a></div>
-        <div class="topbar-divider"></div>
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg><a href="mailto:moteprathmesh22@gmail.com">moteprathmesh22@gmail.com</a></div>
-        <div class="topbar-divider"></div>
-        <div class="topbar-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg><span>Mon–Sat: 9:00 AM – 6:30 PM</span></div>
-      </div>
-      <div class="topbar-right">
-        <div class="topbar-social" style="display:flex;gap:8px">
-          <a href="#"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-            </svg></a>
-          <a href="#"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-            </svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="Ambika Fabrication Logo" />
-        <div class="nav-logo-text">
-          <span class="brand-name">Ambika </span>
-          <span class="brand-sub">Fabrication</span>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="nav-item-dropdown">
-          <a href="services.html" class="dropdown-toggle">
-            Services
-            <svg class="dropdown-icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <polyline points="6 9 12 15 18 9"/>
+  <!-- ══════════════ STICKY HEADER (TOPBAR + NAVBAR) ══════════════ -->
+  <header class="site-header" id="site-header">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-left topbar-slider" id="topbar-slider">
+          <div class="topbar-item topbar-phone active">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" />
             </svg>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html#tensile">Tensile Structures</a></li>
-            <li><a href="services.html#industrial">Industrial Fabrication</a></li>
-            <li><a href="services.html#architectural">Architectural Metalwork</a></li>
-            <li><a href="services.html#turnkey">Turnkey Erection Services</a></li>
-          </ul>
-        </li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-      <a href="contact.html" class="btn btn-gold nav-cta">Get a Free Quote</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            <a href="tel:+919356603567">+91 93566 03567</a>
+          </div>
+          <div class="topbar-divider topbar-div-email"></div>
+          <div class="topbar-item topbar-email">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:moteprathmesh22@gmail.com">moteprathmesh22@gmail.com</a>
+          </div>
+          <div class="topbar-divider topbar-div-hours"></div>
+          <div class="topbar-item topbar-hours">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <span>Mon–Sat: 9:00 AM – 6:30 PM</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-social">
+            <a href="#" aria-label="Facebook" class="social-fb">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-ig">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-li">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://wa.me/919356603567" aria-label="WhatsApp" class="social-wa">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Ambika Fabrication Logo" />
+          <div class="nav-logo-text">
+            <span class="brand-name">Ambika </span>
+            <span class="brand-sub">Fabrication</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="nav-item-dropdown">
+            <a href="services.html" class="dropdown-toggle">
+              Services
+              <svg class="dropdown-icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#poultry-farm">Poultry Farm</a></li>
+              <li><a href="services.html#cow-goat-farm">Cow & Goat Farm</a></li>
+              <li><a href="services.html#onion-storage-shed">Onion Storage Shed</a></li>
+              <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+              <li><a href="services.html#tensile-structure">Tensile Structure</a></li>
+              <li><a href="services.html#project-estimation">Project Estimation</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold nav-cta">Get a Free Quote</a>
+        <button class="hamburger" aria-label="Toggle menu"
+          id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
   <div class="mobile-nav" id="mobile-nav">
     <a href="index.html">🏠 Home</a>
     <a href="about.html">🏭 About Us</a>
-    <a href="services.html">⚙️ Services</a>
-    <div class="mobile-sub-menu">
-      <a href="services.html#tensile">└ Tensile Structures</a>
-      <a href="services.html#industrial">└ Industrial Fabrication</a>
-      <a href="services.html#architectural">└ Architectural Metalwork</a>
-      <a href="services.html#turnkey">└ Turnkey Erection</a>
+    <div class="mobile-nav-item-dropdown">
+      <div class="mobile-dropdown-header">
+        <a href="services.html">⚙️ Services</a>
+        <button class="mobile-dropdown-btn" aria-label="Toggle Services sub-menu" type="button">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-sub-menu">
+        <a href="services.html#poultry-farm">Poultry Farm</a>
+        <a href="services.html#cow-goat-farm">Cow & Goat Farm</a>
+        <a href="services.html#onion-storage-shed">Onion Storage Shed</a>
+        <a href="services.html#industrial-shed">Industrial Shed</a>
+        <a href="services.html#tensile-structure">Tensile Structure</a>
+        <a href="services.html#project-estimation">Project Estimation</a>
+      </div>
     </div>
     <a href="gallery.html" class="active">🖼️ Gallery</a>
     <a href="contact.html">📞 Contact Us</a>
@@ -125,23 +165,81 @@
           structures, industrial sheds, and architectural metalwork.</p>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
-        <button class="filter-btn" data-filter="tensile" id="filter-tensile">Cow Sheds</button>
-        <button class="filter-btn" data-filter="industrial" id="filter-industrial">Poultry Farms</button>
-        <button class="filter-btn" data-filter="architectural" id="filter-architectural">Tensile Structure</button>
+      <!-- Filter Controls (Mobile Dropdown + Pill Buttons) -->
+      <div class="gallery-filter-controls">
+        <!-- Mobile Dropdown Selector (Custom Styled UI Dropdown) -->
+        <div class="gallery-dropdown-wrap" id="gallery-dropdown-wrap">
+          <button type="button" class="custom-select-box" id="gallery-dropdown-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Filter projects by category">
+            <svg class="select-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            <span class="selected-value" id="selected-category-text">📁 All Projects (850+)</span>
+            <svg class="select-chevron" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          
+          <ul class="custom-dropdown-menu" id="gallery-dropdown-menu" role="listbox" aria-label="Project Categories">
+            <li class="dropdown-item active" data-value="all" role="option" aria-selected="true">
+              <span class="item-text">📁 All Projects (850+)</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="poultry-farm" role="option" aria-selected="false">
+              <span class="item-text">🐔 Poultry Farm</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="cow-goat-farm" role="option" aria-selected="false">
+              <span class="item-text">🐄 Cow & Goat Farm</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="onion-storage-shed" role="option" aria-selected="false">
+              <span class="item-text">🧅 Onion Storage Shed</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="industrial-shed" role="option" aria-selected="false">
+              <span class="item-text">🏭 Industrial Shed</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="tensile-structure" role="option" aria-selected="false">
+              <span class="item-text">⛺ Tensile Structure</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="project-videos" role="option" aria-selected="false">
+              <span class="item-text">🎥 Project Videos</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+            <li class="dropdown-item" data-value="field-works" role="option" aria-selected="false">
+              <span class="item-text">⚙️ Field Works</span>
+              <svg class="check-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Filter Buttons (Pill Bar) -->
+        <div class="gallery-filters" id="gallery-filters">
+          <div class="filter-row">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+            <button class="filter-btn" data-filter="poultry-farm" id="filter-poultry">Poultry Farm</button>
+            <button class="filter-btn" data-filter="cow-goat-farm" id="filter-cow-goat">Cow & Goat Farm</button>
+            <button class="filter-btn" data-filter="onion-storage-shed" id="filter-onion">Onion Storage Shed</button>
+          </div>
+          <div class="filter-row">
+            <button class="filter-btn" data-filter="industrial-shed" id="filter-industrial">Industrial Shed</button>
+            <button class="filter-btn" data-filter="tensile-structure" id="filter-tensile">Tensile Structure</button>
+            <button class="filter-btn" data-filter="project-videos" id="filter-videos">Project Videos</button>
+            <button class="filter-btn" data-filter="field-works" id="filter-field-works">Field Works</button>
+          </div>
+        </div>
       </div>
 
       <!-- Gallery Grid -->
       <div class="gallery-grid">
 
-        <!-- Tensile -->
-        <div class="gallery-item" data-category="tensile">
-          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
-            alt="Car Parking Canopy — Pune" loading="lazy" />
+        <!-- 1. Poultry Farm Projects -->
+        <div class="gallery-item" data-category="poultry-farm">
+          <img src="images/Poultry-S.png" alt="High-Capacity Poultry Farm Shed — Maharashtra" loading="lazy" />
           <div class="gallery-overlay">
-            <span>Car Parking Canopy — Pune</span>
+            <span>High-Capacity Poultry Farm Shed — Maharashtra</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -152,11 +250,10 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="industrial">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
-            alt="Factory Shed — Ahmedabad" loading="lazy" />
+        <div class="gallery-item" data-category="poultry-farm">
+          <img src="images/AC-Poultry.png" alt="Climate Controlled AC Poultry Farm Shed — Maharashtra" loading="lazy" />
           <div class="gallery-overlay">
-            <span>Factory Shed — Ahmedabad</span>
+            <span>Climate Controlled AC Poultry Farm Shed — Maharashtra</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -167,11 +264,10 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="architectural">
-          <img src="https://images.unsplash.com/photo-1565008887967-de0cb61eca04?w=600&q=80"
-            alt="Laser-Cut Gate — Mumbai" loading="lazy" />
+        <div class="gallery-item" data-category="poultry-farm">
+          <img src="images/Poultry_Farm_image.jpg" alt="EC Poultry Farm Shed — Baramati" loading="lazy" />
           <div class="gallery-overlay">
-            <span>Laser-Cut Gate — Mumbai</span>
+            <span>EC Poultry Farm Shed — Baramati</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -182,11 +278,13 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="tensile">
-          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80"
-            alt="Stadium Cover — Bengaluru" loading="lazy" />
+
+
+        <!-- 2. Cow & Goat Farm Projects -->
+        <div class="gallery-item" data-category="cow-goat-farm">
+          <img src="images/Cow-index-hero.png" alt="Modern Cow Farm Shed — Maharashtra" loading="lazy" />
           <div class="gallery-overlay">
-            <span>Stadium Cover — Bengaluru</span>
+            <span>Modern Cow Farm Shed — Maharashtra</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -197,11 +295,113 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="industrial">
-          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Warehouse — Hyderabad"
+        <div class="gallery-item" data-category="cow-goat-farm">
+          <img src="images/Goat.png" alt="Modern Goat Farm Shed Structure — Maharashtra" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Modern Goat Farm Shed Structure — Maharashtra</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="cow-goat-farm">
+          <img src="images/Goat_Farm.webp" alt="Hi-Tech Goat & Livestock Shed — Sangli" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Hi-Tech Goat & Livestock Shed — Sangli</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <!-- 3. Onion Storage Shed Projects -->
+        <div class="gallery-item" data-category="onion-storage-shed">
+          <img src="images/Onion-S.png" alt="Multi-Tier Onion Storage Shed — Nashik" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Multi-Tier Onion Storage Shed — Nashik</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="onion-storage-shed">
+          <img src="images/Onion.png" alt="Climate Controlled Onion Storage Shed — Nashik" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Climate Controlled Onion Storage Shed — Nashik</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="onion-storage-shed">
+          <img src="images/Onion-index-hero.png" alt="Aerated Onion Storage Facility — Nashik" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Aerated Onion Storage Facility — Nashik</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+
+
+        <!-- 4. Industrial Shed Projects -->
+        <div class="gallery-item" data-category="industrial-shed">
+          <img src="images/Industrial-S.png" alt="Pre-Engineered Industrial Shed Facility — Pune" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Pre-Engineered Industrial Shed Facility — Pune</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="industrial-shed">
+          <img src="images/Industrial.png" alt="Heavy Steel Industrial Shed Structure — Maharashtra" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Heavy Steel Industrial Shed Structure — Maharashtra</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="industrial-shed">
+          <img src="images/Industry-index-hero.png" alt="Pre-Engineered Industrial Factory Shed — Pune"
             loading="lazy" />
           <div class="gallery-overlay">
-            <span>Warehouse — Hyderabad</span>
+            <span>Pre-Engineered Industrial Factory Shed — Pune</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -212,11 +412,13 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="architectural">
-          <img src="https://images.unsplash.com/photo-1510265236892-329bfd7da009?w=600&q=80"
-            alt="SS Railing — Goa Resort" loading="lazy" />
+
+
+        <!-- 5. Tensile Structure Projects -->
+        <div class="gallery-item" data-category="tensile-structure">
+          <img src="images/Tensile-S.png" alt="Tensile Structure Canopy — Maharashtra" loading="lazy" />
           <div class="gallery-overlay">
-            <span>SS Railing — Goa Resort</span>
+            <span>Tensile Structure Canopy — Maharashtra</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -227,11 +429,10 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="tensile">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
-            alt="Walkway Canopy — Delhi" loading="lazy" />
+        <div class="gallery-item" data-category="tensile-structure">
+          <img src="images/Tensile.png" alt="Large Span Arched Tensile Membrane Roof Structure" loading="lazy" />
           <div class="gallery-overlay">
-            <span>Walkway Canopy — Delhi</span>
+            <span>Large Span Arched Tensile Membrane Roof Structure</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -242,11 +443,11 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="industrial">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cold Storage — Nagpur"
+        <div class="gallery-item" data-category="tensile-structure">
+          <img src="images/Tensile-index-hero.png" alt="Architectural Tensile Car Parking Structure — Mumbai"
             loading="lazy" />
           <div class="gallery-overlay">
-            <span>Cold Storage — Nagpur</span>
+            <span>Architectural Tensile Car Parking Structure — Mumbai</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -257,11 +458,50 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="architectural">
-          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80"
-            alt="Decorative Facade — Chennai" loading="lazy" />
+
+
+        <!-- 6. Project Videos -->
+        <div class="gallery-item video-item" data-category="project-videos">
+          <img src="images/AC-Poultry.png" alt="Poultry Farm Erection Site Walkthrough Video" loading="lazy" />
+          <div class="video-play-badge">▶</div>
           <div class="gallery-overlay">
-            <span>Decorative Facade — Chennai</span>
+            <span>Poultry Farm Erection Site Walkthrough (Video)</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item video-item" data-category="project-videos">
+          <img src="images/Industrial-S.png" alt="Industrial PEB Shed Structural Erection Video" loading="lazy" />
+          <div class="video-play-badge">▶</div>
+          <div class="gallery-overlay">
+            <span>Industrial PEB Shed Structural Erection (Video)</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg></div>
+          </div>
+        </div>
+
+        <div class="gallery-item video-item" data-category="project-videos">
+          <img src="images/Tensile-S.png" alt="Tensile Canopy Membrane Installation Video" loading="lazy" />
+          <div class="video-play-badge">▶</div>
+          <div class="gallery-overlay">
+            <span>Tensile Canopy Membrane Installation (Video)</span>
+            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg></div>
+          </div>
+        </div>
+
+        <!-- 7. Field Works -->
+        <div class="gallery-item" data-category="field-works">
+          <img src="images/Field-Work.png" alt="On-Site Steel Fabrication & Cutting Field Work" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>On-Site Steel Fabrication & Cutting Field Work</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -272,41 +512,11 @@
           </div>
         </div>
 
-        <div class="gallery-item" data-category="tensile">
-          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="Gazebo — Kolkata"
+        <div class="gallery-item" data-category="field-works">
+          <img src="images/Services-bg.png" alt="On-Site Structural Erection & Field Work — Maharashtra"
             loading="lazy" />
           <div class="gallery-overlay">
-            <span>Gazebo — Kolkata</span>
-            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
-                viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                <line x1="11" y1="8" x2="11" y2="14" />
-                <line x1="8" y1="11" x2="14" y2="11" />
-              </svg></div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="industrial">
-          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80"
-            alt="Production Hall — Surat" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Production Hall — Surat</span>
-            <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
-                viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                <line x1="11" y1="8" x2="11" y2="14" />
-                <line x1="8" y1="11" x2="14" y2="11" />
-              </svg></div>
-          </div>
-        </div>
-
-        <div class="gallery-item" data-category="architectural">
-          <img src="https://images.unsplash.com/photo-1555529669-2269763671c0?w=600&q=80"
-            alt="Custom Metal Ceiling — Bangalore" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Metal Ceiling — Bangalore</span>
+            <span>On-Site Structural Erection & Field Work — Maharashtra</span>
             <div class="gallery-zoom"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
                 viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="8" />
@@ -330,24 +540,20 @@
     <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>
 
-  <!-- CTA -->
-  <section style="background:linear-gradient(135deg,var(--gold),var(--gold-dark));padding:72px 0;text-align:center;">
-    <div class="container">
-      <h2 style="font-family:var(--font-display);color:#fff;margin-bottom:14px;">Inspired by Our Work?</h2>
-      <p
-        style="color:rgba(255,255,255,.85);font-size:1.05rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;">
-        Let's build something exceptional together. Contact us for a free project consultation.</p>
-      <a href="contact.html" class="btn btn-white">Get a Free Quote</a>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col footer-about">
-          <div class="footer-logo"><img src="images/logo.png" alt="Ambika Fabrication" /></div>
-          <p>Engineering strength and crafting excellence since 2005.</p>
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Ambika Fabrication" />
+            <div class="footer-logo-text">
+              <span class="brand-name">Ambika</span>
+              <span class="brand-sub">Fabrication</span>
+            </div>
+          </div>
+          <p>Engineering strength and crafting excellence since 2000.</p>
           <div class="footer-social">
             <a href="#"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
@@ -376,10 +582,12 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="services.html">Tensile Structures</a></li>
-            <li><a href="services.html">Industrial Sheds</a></li>
-            <li><a href="services.html">Architectural Metalwork</a></li>
-            <li><a href="services.html">Turnkey Erection</a></li>
+            <li><a href="services.html#poultry-farm">Poultry Farm</a></li>
+            <li><a href="services.html#cow-goat-farm">Cow & Goat Farm</a></li>
+            <li><a href="services.html#onion-storage-shed">Onion Storage Shed</a></li>
+            <li><a href="services.html#industrial-shed">Industrial Shed</a></li>
+            <li><a href="services.html#tensile-structure">Tensile Structure</a></li>
+            <li><a href="services.html#project-estimation">Project Estimation</a></li>
           </ul>
         </div>
         <div class="footer-col">
